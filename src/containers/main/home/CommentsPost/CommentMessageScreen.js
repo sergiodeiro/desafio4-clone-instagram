@@ -6,7 +6,7 @@ import MessagesList from './MessagesList';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 import colors from 'res/colors';
 import images from 'res/images';
-
+///oi
 const data = [{key: '1'}];
 
 export default function DirectMessageScreen() {
