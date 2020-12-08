@@ -1,11 +1,8 @@
 # Desafio 04 - Unifacs - App React Native Instagram Clone
 
 ## How to use || Como rodar
-- `npm install`
+- `npm install or`
 - `yarn install`
-- `cd ios`
-- `pod install` 
-- `cd ..`
 - `react-native run-ios` or `react-native run-android`
 
 
