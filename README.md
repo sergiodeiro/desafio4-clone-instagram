@@ -1,8 +1,6 @@
 # Desafio 04 - Unifacs - App React Native Instagram Clone
 
 ## How to use || Como rodar
-- `git clone https://github.com/1hbb/react-native-instagram-clone.git`
-- `cd Instagram`
 - `npm install`
 - `yarn install`
 - `cd ios`
