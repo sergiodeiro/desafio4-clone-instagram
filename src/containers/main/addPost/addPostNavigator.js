@@ -10,7 +10,7 @@ export default function addPostNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Add Post"
+        name="Adcionar um novo post"
         component={addPostScreen}
         options={{
           headerStyle: {

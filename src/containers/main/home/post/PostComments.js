@@ -6,9 +6,9 @@ export default function PostComments({post}) {
   return (
     <TouchableOpacity
       style={{marginTop: 5, marginStart: 15}}
-      onPress={() => console.log('Pressed Post Comments')}>
+      onPress={() => console.log('Ao precionar para ver os comentários')}>
       <Text style={{color: colors.textFaded2}}>
-        View all {post.commentCount} comments
+        {post.commentCount} comentarios
       </Text>
     </TouchableOpacity>
   );

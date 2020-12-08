@@ -4,18 +4,9 @@ import colors from 'res/colors';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 
 const data = [
-  {key: '1', tag: 'IGTV'},
-  {key: '2', tag: 'Travel'},
-  {key: '3', tag: 'Architecture'},
-  {key: '4', tag: 'Store'},
-  {key: '5', tag: 'Decoration'},
-  {key: '6', tag: 'Art'},
-  {key: '7', tag: 'Food'},
-  {key: '8', tag: 'Stil'},
-  {key: '9', tag: 'TV and Movies'},
-  {key: '10', tag: 'Do it Yourself'},
-  {key: '11', tag: 'Comedy'},
-  {key: '12', tag: 'Music'},
+  {key: '1', tag: 'Musica'},
+  {key: '2', tag: 'Viagens'},
+  {key: '3', tag: 'Moda'},
 ];
 
 function TagContainer({tag}) {

@@ -4,7 +4,7 @@ import colors from 'res/colors';
 
 export default function PostPublishDate({post}) {
   return (
-    <TouchableOpacity onPress={() => console.log('Pressed Post Publish Date')}>
+    <TouchableOpacity onPress={() => console.log('Clique para alterar a data')}>
       <Text
         style={{
           color: colors.textFaded2,

@@ -10,11 +10,11 @@ export default function PostHeader({post}) {
     <View style={Styles.container}>
       <View style={Styles.nameContainer}>
         <Image
-          source={{uri: 'https://picsum.photos/300'}}
+          source={{uri: post.perfilUrl}}
           style={Styles.personImage}
         />
         <View>
-          <Text style={Styles.personName}> {post.userName} </Text>
+          <Text style={Styles.personName}> {post.userName}</Text>
           <Text style={Styles.placeName}> {post.placeName} </Text>
         </View>
       </View>

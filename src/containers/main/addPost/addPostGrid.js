@@ -4,7 +4,6 @@ import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 
 const data = [
   {key: '1'},
-  {key: '2'},
 ];
 
 function Test() {

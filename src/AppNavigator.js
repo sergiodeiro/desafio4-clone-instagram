@@ -1,3 +1,7 @@
+//Desenvolvido por:
+//Sergio Deiró
+//Mauricio Lanner
+//Philipe 
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import {
@@ -9,6 +13,7 @@ import {
   Image,
   StatusBar,
 } from 'react-native';
+import api from './config/api.js'
 import palette from 'res/palette';
 import TabNavigator from './containers/main/TabNavigator';
 import MainNavigator from './containers/main/MainNavigator';
@@ -19,10 +24,16 @@ import colors from './res/colors';
 StatusBar.setBarStyle('light-content');
 
 export default function AppNavigator() {
-  const [validate, setValidate] = React.useState(false); //giriş yapılınca geri geri gelmeyi deaktif etmek için kullandık
+  const [validate, setValidate] = React.useState(false); //Desativa o retorno quando logado
   function LoginScreen() {
+    const Api = api;
     const _signInAsync = async () => {
-      setValidate(true);
+      if(1 == 1){
+        setValidate(true);
+      }else{
+        setValidate(false);
+      }
+      
     };
     return (
       <View style={Styles.container}>
@@ -32,7 +43,7 @@ export default function AppNavigator() {
         <View style={Styles.userNameContainer}>
           <TextInput
             style={Styles.userNameInput}
-            placeholder="Phone number, username or email"
+            placeholder="E-mail"
             placeholderTextColor={colors.textFaded2}
           />
         </View>
@@ -40,17 +51,12 @@ export default function AppNavigator() {
           <TextInput
             secureTextEntry={true}
             style={Styles.passwordInput}
-            placeholder="Password"
+            placeholder="Senha"
             placeholderTextColor={colors.textFaded2}
           />
         </View>
-        <View style={Styles.forgotPasswordContainer}>
-          <TouchableOpacity>
-            <Text style={Styles.forgotPasswordText}>Forgot password?</Text>
-          </TouchableOpacity>
-        </View>
         <TouchableOpacity style={Styles.loginContainer} onPress={_signInAsync}>
-          <Text style={Styles.loginText}>Log In</Text>
+          <Text style={Styles.loginText}>Entrar</Text>
         </TouchableOpacity>
         <View
           style={{
@@ -61,34 +67,12 @@ export default function AppNavigator() {
             marginTop: 30,
           }}>
           <View style={{flex: 1, height: 1, backgroundColor: '#262626'}}></View>
-          <Text style={{marginLeft: 40, marginRight: 40, color: '#969696'}}>
-            OR
-          </Text>
+
           <View
             style={{
               flex: 1,
               height: 1,
               backgroundColor: '#262626',
-            }}></View>
-        </View>
-        <View
-          style={{
-            marginTop: 40,
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <Image source={images.facebookLogo} style={{width: 20, height: 20}} />
-          <TouchableOpacity style={{alignItems: 'center', marginStart: 10}}>
-            <Text style={{color: '#008bef'}}>Log In With Facebook</Text>
-          </TouchableOpacity>
-        </View>
-        <View style={{flexDirection: 'row', marginTop: 50}}>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: '#262626',
-              height: 1,
             }}></View>
         </View>
         <View
@@ -97,9 +81,9 @@ export default function AppNavigator() {
             justifyContent: 'center',
             marginTop: 20,
           }}>
-          <Text style={{color: '#969696'}}>Don't have an account ?</Text>
+          <Text style={{color: '#969696'}}>Ainda não tem uma conta?</Text>
           <TouchableOpacity>
-            <Text style={{color: '#008bef'}}> Sign Up.</Text>
+            <Text style={{color: '#008bef'}}> Cadastre-se.</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -128,7 +112,7 @@ const Styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#000',
+    backgroundColor: '#282a36',
   },
   logoContainer: {
     alignItems: 'center',
