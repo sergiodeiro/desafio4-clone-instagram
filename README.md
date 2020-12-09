@@ -5,6 +5,23 @@
 - `yarn install`
 - `react-native run-ios` or `react-native run-android`
 
+## Screens Project
+
+<table>
+  <tr>
+    <td><img src="./screenshots/login.png" width="400"></td>
+    <td><img src="./screenshots/home.png" width="400"></td>
+  <tr>
+  <tr>
+    <td><img src="./screenshots/atividades.png" width="400"></td>
+    <td><img src="./screenshots/direct.png" width="400"></td>
+  <tr>
+  <tr>
+    <td><img src="./screenshots/feed.png" width="400"></td>
+    <td><img src="./screenshots/profile.png" width="400"></td>
+  <tr>
+</table>
+
 
 ## Dependencies
 - `@react-native-community/masked-view": "^0.1.10"`
