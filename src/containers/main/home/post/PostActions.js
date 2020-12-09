@@ -26,10 +26,10 @@ export default function PostActions() {
         <TouchableOpacity onPress={() => setLikeIcon(likeIcon + 1)}>
           <Image source={tapToLike(likeIcon)} style={Styles.actionIcons} />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => console.log('Pressed Comment')}>
+        <TouchableOpacity onPress={() => console.log('Comentário')}>
           <Image source={images.comment} style={Styles.actionIcons} />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => console.log('Pressed Direct Message')}>
+        <TouchableOpacity onPress={() => console.log('Direct')}>
           <Image source={images.direct_message} style={Styles.actionIcons} />
         </TouchableOpacity>
       </View>

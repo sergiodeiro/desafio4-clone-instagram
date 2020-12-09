@@ -19,7 +19,7 @@ export default function profileNavigator() {
             <TouchableOpacity
               style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
               <Text style={{color: 'white', fontWeight: 'bold', fontSize: 16}}>
-                johndoe
+                Philippe Carvalho
               </Text>
             </TouchableOpacity>
           ),

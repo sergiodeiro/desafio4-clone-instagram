@@ -11,7 +11,7 @@ export default function UserBio() {
         marginTop: 20,
       }}>
       <View style={{marginBottom: 5}}>
-        <Text style={{color: 'white', fontWeight: 'bold'}}>John Doe</Text>
+        <Text style={{color: 'white', fontWeight: 'bold'}}>Philippe Carvalho</Text>
       </View>
       <View style={{marginBottom: 5}}>
         <Text style={{color: 'white'}}>

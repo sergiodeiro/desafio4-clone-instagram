@@ -26,3 +26,8 @@
 - Philippe Carvalho - 205182018
 - Maurício Lanner - 205182016
 - Sérgio Deiró de Souza Silva - 205182052
+
+
+## Login para acesso:
+- email: 'philippe@gmail.com',
+- password: '123456'

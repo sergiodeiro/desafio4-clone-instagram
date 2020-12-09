@@ -75,7 +75,7 @@ export default function MainNavigator({navigation}) {
           headerTitle: () => (
             <View>
               <Text style={{color: 'white', fontWeight: 'bold', fontSize: 16}}>
-                johndoe
+              Philippe Carvalho
               </Text>
             </View>
           ),

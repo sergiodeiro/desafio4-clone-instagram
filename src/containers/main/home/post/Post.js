@@ -13,7 +13,7 @@ export default function Post({post}) {
     <React.Fragment>
       <PostHeader post={post} />
       <PostImage post={post} />
-      <PostActions />
+      <PostActions post={id} />
       <PostLikes post={post} />
       <PostText post={post} />
       <PostComments post={post} />
